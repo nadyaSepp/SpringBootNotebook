@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- вставили шаблон: xmlns:th="http://thymleaf.org"  чтобы работал Thymleaf-->>
+<html lang="en" xmlns:th="http://thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Все книги</title>
+</head>
+<body>
+    <h1 style="color: navy">Все доступные книги библиотеки: </h1>
+<!--    <div th:each="book : ${books}">-->
+<!--        <a th:href="@{/books/{id}(id=${book.getId()})}" th:text="${book.getAuthor()}" th:text="${book.getTitle()}" th:text="${book.getGenre()}"></a>-->
+<!--    </div>-->
+    <div th:each="book : ${books}">
+        <a th:href="@{/books/{id}(id=${book.getId()})}" th:text="${book.getName()}">Пока отображение наименования</a>
+    </div>
+
+    <br>
+    <div>
+        <a th:href="@{/books/new}"><h3 style="color: coral">Добавить новую книгу</h3></a>
+
+    </div>
+</body>
+</html>
