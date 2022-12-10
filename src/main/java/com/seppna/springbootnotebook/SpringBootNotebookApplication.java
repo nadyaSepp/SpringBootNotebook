@@ -3,8 +3,12 @@ package com.seppna.springbootnotebook;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+//Домашнее задание 2:
+// К вашему проекту CRUD приложение с книгами от 27.11 добавьте валидацию полей,
+// также, к классам моделей добавьте Lombok.
 
-//Домашнее задание:   CRUD приложение.
+
+//Домашнее задание 1:   CRUD приложение.
 //Представьте, что мы делаем бесплатный сервис для скачивания книг.
 //Пользователь должен видеть список всех книг, просматривать информацию о конкретной книге,
 //добавлять свою книгу и изменять существующие книги.
@@ -15,6 +19,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //• Название книги (строка)
 //• Жанр (строка)
 //Храним книгу в базе данных sqlite. База данных будет состоять из одной таблицы Book.
+
 
 @SpringBootApplication
 public class SpringBootNotebookApplication {

@@ -3,7 +3,13 @@ package com.seppna.springbootnotebook.modules;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Setter
+@Getter
+@ToString
 public class Book {
     private int id;              //первичный ключ
     @NotEmpty(message = "Название книги не может быть пустым!")
@@ -30,34 +36,35 @@ public class Book {
 
     }
 
-    public int getId() {
-        return id;
-    }
-    public String getAuthor() {
-        return author;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setId(int id) { this.id = id; }
-    public void setGenre(String genre) { this.genre = genre; }
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", author='" + author + '\'' +
-                ", name='" + name + '\'' +
-                ", genre='" + genre + '\'' +
-                '}';
-    }
+    //вставили зависимость Lombok - поэтому убираем в модели все метлды Set, Get
+//    public int getId() {
+//        return id;
+//    }
+//    public String getAuthor() {
+//        return author;
+//    }
+//    public String getName() {
+//        return name;
+//    }
+//    public String getGenre() {
+//        return genre;
+//    }
+//
+//    public void setAuthor(String author) {
+//        this.author = author;
+//    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//    public void setId(int id) { this.id = id; }
+//    public void setGenre(String genre) { this.genre = genre; }
+//    @Override
+//    public String toString() {
+//        return "Book{" +
+//                "id=" + id +
+//                ", author='" + author + '\'' +
+//                ", name='" + name + '\'' +
+//                ", genre='" + genre + '\'' +
+//                '}';
+//    }
 }
