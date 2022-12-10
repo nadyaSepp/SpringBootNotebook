@@ -1,0 +1,25 @@
+body{
+    background:cadetblue;
+}
+
+
+a:hover{
+    color:blue;
+}
+
+.error {
+    color:firebrick;
+}
+
+h1{
+    text-align: center;
+    color: navy;
+}
+
+h2{
+   color:black;
+}
+
+h3{
+    color: chocolate;
+}

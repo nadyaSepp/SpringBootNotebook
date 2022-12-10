@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Добавить новую книгу</title>
-    <style>
-        .error {
-            color:cadetblue;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <form th:method="POST" th:action="@{/books}" th:object="${book}">
@@ -32,7 +28,7 @@
 
 <hr>
 <div>
-    <a th:href="@{/books}"><h3 style="color: coral">Назад к книгам</h3></a>
+    <a th:href="@{/books}"><h3>Назад к книгам</h3></a>
 </div>
 
 </body>
